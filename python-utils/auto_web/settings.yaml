@@ -1,0 +1,7 @@
+hotkey:
+  open: ctrl+alt+q
+  wait: ctrl+alt+e
+file:
+  name: urls.json
+  start_index: 0
+  end_index: 100
