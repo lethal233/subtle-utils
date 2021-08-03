@@ -3,6 +3,7 @@ import os
 import keyboard as kb
 import sys
 import yaml
+import pandas as pd
 
 sys.path.append("..")
 from datproc.file_data import read_json, write_json
@@ -42,6 +43,9 @@ def main() -> None:
         elif setting['file']['name'][-4:] == '.csv':
             # TODO:
             return
+        elif setting['file']['name'][-5:] == '.xlsx':
+            df = pd.read_excel(setting['file']['name'])
+            link_list = list(df[setting['file']['column_name_html']])
         else:
             return
     except RuntimeError:

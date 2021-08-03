@@ -8,6 +8,7 @@
 - [x] Support for json file that stores URLs
 - [ ] Add support for csv, txt, etc. files that store URLs
 - [ ] Refactor and Redesign in OO design
+- [ ] Add regression test
 
 ## DEPENDENCIES
 - `datproc` module for reading json file
